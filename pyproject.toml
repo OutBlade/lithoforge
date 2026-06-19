@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lithoforge"
+version = "1.0.0"
+description = "DIY semiconductor lithography toolkit: mask design, OPC, and process calculations for MSLA printers"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = ["lithography", "semiconductor", "MSLA", "photoresist", "DIY", "fabrication"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "numpy>=1.24",
+    "Pillow>=9.0",
+    "scipy>=1.10",
+    "matplotlib>=3.6",
+    "click>=8.0",
+]
+
+[project.scripts]
+lithoforge = "lithoforge.cli:cli"
+
+[project.urls]
+Homepage = "https://github.com/OutBlade/lithoforge"
+Repository = "https://github.com/OutBlade/lithoforge"
+Issues = "https://github.com/OutBlade/lithoforge/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["lithoforge*"]
