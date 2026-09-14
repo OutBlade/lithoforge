@@ -1,5 +1,9 @@
 # LithoForge
 
+<!-- project-navigation -->
+[Getting started](#install) · [Features](#what-it-does)
+<!-- /project-navigation -->
+
 **DIY semiconductor lithography toolkit for MSLA printers.**
 
 Process calculators, mask designer, OPC engine, and spacer lithography tools
